@@ -1,0 +1,8 @@
+Description:
+    Creates migrations required by acts_as_viewable
+
+Example:
+    ./script/generate acts_as_viewable
+
+    This will create:
+        db/migrations/xxxxxxxxxxxxxx_acts_as_viewable_migration.rb
