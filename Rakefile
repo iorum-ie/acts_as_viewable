@@ -3,12 +3,12 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  gem.name = 'acts_as_viewable'
+  gem.name = 'iorum-acts_as_viewable'
   gem.homepage = 'http://github.com/iorum/acts_as_viewable'
   gem.license = 'MIT'
   gem.summary = %Q{Record IP/timeframe unique viewings of your models}
   gem.description = %Q{Adds models and methods to facilitate tracking of views of your models. Models which act_as_viewable have an instance method view! which will record a viewing of a record by the supplied IP address if and only if the IP has not viewed the record in the last n minutes.}
-  gem.email = 'alan@iorum.ie'
+  gem.email = 'alan.larkin@gmail.com'
   gem.authors = ['Alan Larkin']
   gem.add_development_dependency 'sqlite3-ruby', '>= 1.2.5'
   gem.add_development_dependency 'rspec', '~> 1.3'
