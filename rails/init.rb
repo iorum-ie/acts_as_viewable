@@ -1,3 +1,2 @@
-require 'acts_as_viewable'
-
-ActiveRecord::Base.send :include, ActsAsViewable
+require 'acts_as_viewable/railtie'
+ActsAsViewable::Railtie.insert
