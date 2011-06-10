@@ -10,7 +10,7 @@ module ActsAsViewable
         end
       end
       rake_tasks do
-        load "acts_as_viewable.rake", 'lib/tasks/acts_as_viewable.rake', :collision => :ask
+        load 'tasks/acts_as_viewable.rake'
       end
     end
   end
