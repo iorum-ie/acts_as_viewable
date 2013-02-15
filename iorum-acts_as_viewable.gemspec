@@ -4,15 +4,16 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{acts_as_viewable}
-  s.version = "0.1.0"
+  s.name = "iorum-acts_as_viewable"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alan Larkin"]
-  s.date = %q{2010-12-02}
-  s.description = %q{Adds models and methods to facilitate tracking of views of your models. Models which act_as_viewable have an instance method view! which will record a viewing of a record by the supplied IP address if and only if the IP has not viewed the record in the last n minutes.}
-  s.email = %q{alan@iorum.ie}
+  s.date = "2013-02-15"
+  s.description = "Adds models and methods to facilitate tracking of views of your models. Models which act_as_viewable have an instance method view! which will record a viewing of a record by the supplied IP address if and only if the IP has not viewed the record in the last n minutes."
+  s.email = "alan.larkin@gmail.com"
   s.extra_rdoc_files = [
+    "README",
     "README.markdown"
   ]
   s.files = [
@@ -20,6 +21,7 @@ Gem::Specification.new do |s|
     ".rspec",
     "CHANGELOG",
     "MIT-LICENSE",
+    "README",
     "README.markdown",
     "Rakefile",
     "VERSION",
@@ -28,6 +30,7 @@ Gem::Specification.new do |s|
     "generators/acts_as_viewable/templates/acts_as_viewable.rake",
     "generators/acts_as_viewable/templates/acts_as_viewable_migration.rb",
     "init.rb",
+    "iorum-acts_as_viewable.gemspec",
     "lib/acts_as_viewable.rb",
     "lib/acts_as_viewable/acts_as_viewable.rb",
     "lib/acts_as_viewable/total_viewings.rb",
@@ -40,21 +43,13 @@ Gem::Specification.new do |s|
     "spec/spec.opts",
     "spec/spec_helper.rb"
   ]
-  s.homepage = %q{http://github.com/iorum/acts_as_viewable}
+  s.homepage = "http://github.com/iorum/acts_as_viewable"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Record IP/timeframe unique viewings of your models}
-  s.test_files = [
-    "spec/acts_as_viewable/acts_as_viewable_spec.rb",
-    "spec/acts_as_viewable/total_viewings_spec.rb",
-    "spec/acts_as_viewable/viewing_spec.rb",
-    "spec/schema.rb",
-    "spec/spec_helper.rb"
-  ]
+  s.rubygems_version = "1.8.23"
+  s.summary = "Record IP/timeframe unique viewings of your models"
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
